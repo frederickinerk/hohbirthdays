@@ -1,0 +1,22 @@
+
+div{
+  border: 2px solid goldenrod;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+table{
+  border: 2px greenyellow;
+}
+
+th {
+  border: 1px solid blueviolet;
+  background-color: chartreuse;
+}
+
+td {
+  border: 1px solid purple;
+  color: black;
+  text-align: center;
+  background-color: burlywood;
+}
