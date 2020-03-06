@@ -12,14 +12,13 @@ const httpOptions = {
 
 @Injectable()
 export class BirthdaysService {
-  private birthdayUrl = "http://www.mocky.io/v2/5e621af230000072004d574d";
+  private birthdayUrl = "https://www.mocky.io/v2/5e621af230000072004d574d";
 
   constructor(private http: HttpClient) {}
 
    /** GET Elec Details by id. Will 404 (BLAH bring back) if id not found */
   getBirthdays(): Observable<BirthdayEvent[]> {
     const url = `${this.birthdayUrl}?fake=${"XX"}`;
-    // console.info('getElecDetails');
     return this.http.get<BirthdayEvent[]>(url).pipe(
       tap(_ => this.log(`fetched birthdays`)),
       catchError(this.handleError<BirthdayEvent>(`getBirthdays`))

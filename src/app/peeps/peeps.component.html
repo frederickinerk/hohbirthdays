@@ -1,19 +1,14 @@
-<div>
- <table style="width:100%">
-  <tr>
-    <th>Days</th>
-    <th>Name</th>
-    <th>Turning...</th>
-  </tr>
-  <tr>
-    <td>-1</td>
-    <td>John</td>
-    <td>Old</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Eve</td>
-    <td>Older</td>
-  </tr>
-</table> 
+<div *ngIf="birthdayEvents">
+	<table style="width:100%">
+		<tr>
+			<th>Name</th>
+			<th>Days Until/Since</th>
+			<th>Turning...</th>
+		</tr>
+		<tr *ngFor="let bd of birthdayEvents">
+			<td>{{bd.name}}</td>
+			<td>{{bd.daysAway}}</td>
+			<td>{{bd.ageAtBirthday}}</td>
+		</tr>
+	</table>
 </div>
