@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'there';
+  todayStr;
+
+  ngOnInit() {
+    var d = new Date();
+    this.todayStr = d; //d.toLocaleDateString();
+  }
+
 }
