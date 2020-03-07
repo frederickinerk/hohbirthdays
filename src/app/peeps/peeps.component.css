@@ -1,0 +1,19 @@
+
+div{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+table{
+  border-style: none;
+}
+
+th {
+  border-bottom: 1px solid blueviolet;
+}
+
+td {
+  border-bottom: 1px solid blueviolet;
+  color: black;
+  text-align: center;
+}

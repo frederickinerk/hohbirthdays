@@ -1,3 +1,14 @@
-<p>
-peeps works (ir dies ut)
-</p>
+<div *ngIf="birthdayEvents">
+	<table style="width:100%">
+		<tr>
+			<th>Name</th>
+			<th>Days Until/Since</th>
+			<th>Turning...</th>
+		</tr>
+		<tr *ngFor="let bd of birthdayEvents">
+			<td>{{bd.name}}</td>
+			<td>{{bd.daysAway}}</td>
+			<td>{{bd.ageAtBirthday}}</td>
+		</tr>
+	</table>
+</div>
